@@ -1,0 +1,128 @@
+/*Asus section*/
+.sec-for-asus {
+  background: none;
+}
+
+.sec-for-asus .h-primary {
+  padding: 80px;
+}
+
+.sec-for-asus .container-for-asus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px 20px;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+  padding: 30px;
+}
+
+.sec-for-asus .container-for-asus .box {
+  background: none;
+  border: none;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.sec-for-asus .container-for-asus .box .pic {
+  width: 500px;
+  text-align: center;
+}
+
+.sec-for-asus .container-for-asus .box .pic img {
+  width: 100%;
+}
+
+.sec-for-asus .container-for-asus .box table {
+  padding: 10px;
+}
+
+.sec-for-asus .container-for-asus .box table th .speci {
+  font-size: 14px;
+  color: #45748f;
+  font-size: 0px;
+}
+
+.sec-for-asus .container-for-asus .box table tr th {
+  padding: 0px;
+  color: #24849c;
+  text-align: left;
+  margin: 0;
+}
+
+.sec-for-asus .container-for-asus .box table tr td {
+  color: #24849c;
+  padding: 0;
+  margin: 0;
+  padding: 20px 10px;
+}
+
+/*Apple section*/
+@media screen and (max-width: 700px) {
+  .sec-for-asus {
+    position: relative;
+    width: 100%;
+  }
+  .sec-for-asus .h-primary {
+    font-size: 23px;
+    text-align: center;
+  }
+  .sec-for-asus .container-for-asus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec-for-asus .container-for-asus .box {
+    background: none;
+    width: 100%;
+    -webkit-box-shadow: 1px 6px 7px #459b9e;
+            box-shadow: 1px 6px 7px #459b9e;
+    border: none;
+  }
+  .sec-for-asus .container-for-asus .box .pic {
+    width: 150px;
+  }
+  .sec-for-asus .container-for-asus .box .pic img {
+    width: 100%;
+  }
+  .sec-for-asus .container-for-asus .box table {
+    padding: none;
+  }
+  .sec-for-asus .container-for-asus .box table th {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sec-for-asus .container-for-asus .box table tr th {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sec-for-asus .container-for-asus .box table tr td {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=asus.css.map */

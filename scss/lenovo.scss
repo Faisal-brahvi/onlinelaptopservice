@@ -1,0 +1,101 @@
+/*Dell section*/
+
+$padding-th-for-laptops: 20px 30px;
+$table-font-color:rgb(140, 111, 111);
+.sec-for-lenovo {
+    margin: 150px 0px;
+    .h-primary {
+        margin: 120px 0px;
+    }
+    .container-for-lenovo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px 20px;
+        grid-row-gap: 50px;
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .pic {
+                width: 400px;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+            table {
+                .speci {
+                    padding: 20px 50px;
+                }
+                tr {
+                    th {
+                        padding: $padding-th-for-laptops;
+                        color: $table-font-color;
+                        text-align: left;
+                    }
+                    td {
+                        color: $table-font-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*for Phone section*/
+
+@media screen and (max-width:700px) {
+    .sec-for-lenovo {
+        margin: 90px 0px;
+        .h-primary {
+            margin: 50px 0px;
+            font-size: 29px;
+        }
+        .container-for-lenovo-phone {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            place-content: center;
+            .box {
+                flex-wrap: wrap;
+                margin: 40px 0px;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .pic {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+                form {
+                    table {
+                        .speci {
+                            padding: 10px 10px;
+                            text-align: right;
+                            color: gray;
+                            font-weight: bold;
+                            font-size: 23px;
+                        }
+                        tr {
+                            width: 300px;
+                            th {
+                                text-align: left;
+                                padding: $padding-th-for-laptops;
+                            }
+                            td {
+                                padding: $padding-th-for-laptops;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

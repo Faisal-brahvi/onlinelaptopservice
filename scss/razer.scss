@@ -1,0 +1,112 @@
+/*Variables*/
+
+$padding-th-for-laptops: 0px;
+$table-font-color:#24849c;
+$bg-color-for-box: none;
+$bg-for-sec: none;
+$border-for-box: none;
+
+/*Razer laptop section*/
+
+.sec-for-razer {
+    background: $bg-for-sec;
+    .h-primary {
+        padding: 80px;
+    }
+    .container-for-razer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px 20px;
+        grid-row-gap: 50px;
+        grid-column-gap: 20px;
+        padding: 30px;
+        .box {
+            background: $bg-color-for-box;
+            border: $border-for-box;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .pic {
+                width: 500px;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+            table {
+                padding: 10px;
+                th .speci {
+                    font-size: 14px;
+                    color: rgb(69, 116, 143);
+                    font-size: 0px;
+                }
+                tr {
+                    th {
+                        padding: $padding-th-for-laptops;
+                        color: $table-font-color;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    td {
+                        color: $table-font-color;
+                        padding: 0;
+                        margin: 0;
+                        padding: 20px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Apple section*/
+
+@media screen and (max-width:700px) {
+    .sec-for-razer {
+        position: relative;
+        width: 100%;
+        .h-primary {
+            font-size: 23px;
+            text-align: center;
+        }
+        .container-for-razer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .box {
+                background: none;
+                width: 100%;
+                box-shadow: 1px 6px 7px rgb(69, 155, 158);
+                border: none;
+                .pic {
+                    width: 150px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                table {
+                    padding: none;
+                    th {
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                    tr {
+                        th {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        td {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

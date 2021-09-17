@@ -1,0 +1,113 @@
+/*For phone*/
+/*Apple section*/
+.sec-for-dell .h-primary {
+  padding: 80px;
+}
+
+.sec-for-dell .container-for-dell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px 20px;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+}
+
+.sec-for-dell .container-for-dell .box {
+  border: 2px solid gray;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.sec-for-dell .container-for-dell .box .pic {
+  width: 300px;
+  text-align: center;
+}
+
+.sec-for-dell .container-for-dell .box .pic img {
+  width: 100%;
+}
+
+.sec-for-dell .container-for-dell .box table th .speci {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #45748f;
+  font-size: 0px;
+}
+
+.sec-for-dell .container-for-dell .box table tr th {
+  padding: 0px;
+  color: #8c6f6f;
+  text-align: left;
+  margin: 0;
+}
+
+.sec-for-dell .container-for-dell .box table tr td {
+  color: #8c6f6f;
+  padding: 0;
+  margin: 0;
+}
+
+/*Apple section*/
+@media screen and (max-width: 700px) {
+  .sec-for-dell {
+    position: relative;
+    width: 100%;
+  }
+  .sec-for-dell .h-primary {
+    font-size: 23px;
+    text-align: center;
+  }
+  .sec-for-dell .container-for-dell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec-for-dell .container-for-dell .box {
+    width: 100%;
+  }
+  .sec-for-dell .container-for-dell .box .pic {
+    width: 150px;
+  }
+  .sec-for-dell .container-for-dell .box .pic img {
+    width: 100%;
+  }
+  .sec-for-dell .container-for-dell .box table th {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sec-for-dell .container-for-dell .box table tr th {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sec-for-dell .container-for-dell .box table tr td {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=dell.css.map */

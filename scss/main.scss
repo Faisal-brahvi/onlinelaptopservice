@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*Font styles here*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Variables*/
+
+$box-shdow-for-nav-bar:1px 7px 9px rgb(235,
+184,
+184);
+
+/*order none for input and button order-now*/
+
+$border-none-for-order :none;
+
+/*border color-for-order-div*/
+
+$border-color-for-order-div:rgb(238,
+18,
+18);
+
+/*befor background for hero sec*/
+
+$background-image-for-before-container: none;
+
+/*padding for table prices laptops*/
+
+$padding-th-for-laptops: 10px 20px;
+
+/*font color for tables of laptops*/
+
+$table-font-color :rgb(54,
+41,
+46);
+
+/**/
+
+
+/*End variables */
+
+
+/*Nav bar width and hieght*/
+
+nav {
+    z-index: 4444;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: rgb(169, 70, 70);
+    box-shadow: $box-shdow-for-nav-bar;
+    .nav-bar {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*logo here*/
+
+nav {
+    .logo {
+        display: flex;
+        color: #fff;
+        font-size: 39px;
+    }
+}
+
+
+/*links here*/
+
+nav {
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        a {
+            color: #fff;
+            font-size: 20px;
+            &.active {
+                background: rgb(136, 123, 123);
+                color: #fff;
+                padding: 8px 12px;
+                border-radius: 5px;
+            }
+            &:hover {
+                color: rgb(214, 199, 199);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+nav {
+    .check {
+        display: none;
+    }
+}
+
+
+/*End Header Side */
+
+
+/*hero section Container here*/
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    top: 290px;
+    .content {
+        z-index: 12;
+        .hero {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 86px;
+                color: rgb(127, 144, 181);
+            }
+            p {
+                width: 500px;
+                padding: 30px 0px;
+            }
+            .order-now {
+                height: 50px;
+                display: flex;
+                background: rgb(116, 7, 7);
+                border: 3px solid $border-color-for-order-div;
+                border-left: 5px solid $border-color-for-order-div;
+                input {
+                    width: 423px;
+                    border: $border-none-for-order;
+                    text-align: center;
+                    font-size: 28px;
+                    &:focus {
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .btn-order {
+                    border: $border-none-for-order;
+                    padding: 0px 20px;
+                    background: rgb(238, 18, 18);
+                    font-size: 19px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+/*display none apple-section*/
+
+.sec-for-apple {
+    display: none;
+}
+
+
+/*display show*/
+
+#call-apple.show {
+    display: block;
+}
+
+
+/*display none or show for hp-section*/
+
+.sec-for-hp {
+    display: none;
+}
+
+#call-hp.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Dell section*/
+
+.sec-for-dell {
+    display: none;
+}
+
+#call-dell.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Lenovo Section*/
+
+.sec-for-lenovo {
+    display: none;
+}
+
+#call-lenovo.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*sec for Acer*/
+
+.sec-for-acer {
+    display: none;
+}
+
+#call-acer.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*sec for Asus*/
+
+.sec-for-asus {
+    display: none;
+}
+
+#call-asus.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*sec for MSI*/
+
+.sec-for-msi {
+    display: none;
+}
+
+#call-msi.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Sec for Razer*/
+
+.sec-for-razer {
+    display: none;
+}
+
+#call-razer.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*container for apple*/
+
+@media screen and (max-width: 1250px) {
+    nav {
+        .links {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width:700px) {
+    /*logo for phone*/
+    nav {
+        height: 50px;
+        .logo-for-phone {
+            width: 100%;
+            justify-content: center;
+            padding: 9px;
+            font-size: 27px;
+        }
+    }
+    /*Nav for phone*/
+    nav {
+        .nav-bar {
+            width: 100%;
+            padding: 0;
+        }
+        .links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .8);
+            text-align: center;
+            z-index: 3434334;
+            li {
+                padding: 30px;
+            }
+        }
+    }
+    .links.show {
+        display: flex;
+    }
+    /*Burgur butto*/
+    nav {
+        position: relative;
+        .btn-burgur {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 20px;
+            height: 30px;
+            cursor: pointer;
+            .line {
+                width: auto;
+                height: 3px;
+                background: #fff;
+                margin: 5px 0px;
+            }
+        }
+    }
+    /*header part end */
+    /*hero section Container here*/
+    .container {
+        padding: 70px;
+        background: url(../background/bg-for-phone.jpg)no-repeat center center/cover;
+        width: 100%;
+        height: 500px;
+        box-shadow: 0px 5px 3px rgb(85, 56, 56);
+        top: 0px;
+        .content {
+            z-index: 122;
+            .hero {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    text-align: center;
+                    font-size: 33px;
+                    width: 333px;
+                    color: rgb(127, 144, 181);
+                }
+                p {
+                    width: 380px;
+                    padding: 30px 0px;
+                    text-align: center;
+                    color: #fff;
+                }
+                .order-now {
+                    background: none;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 60px;
+                    width: 380px;
+                    border: none;
+                    input {
+                        width: 380px;
+                        border: 1px solid red;
+                        margin-bottom: 5px;
+                        font-size: 17px;
+                        padding: 10px 0px;
+                        &:hover {
+                            border: 2px solid rgb(40, 113, 221);
+                        }
+                    }
+                    .btn-order {
+                        border: $border-none-for-order;
+                        background: rgb(98, 141, 206);
+                        font-size: 18px;
+                        color: #fff;
+                        cursor: pointer;
+                        width: 200px;
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

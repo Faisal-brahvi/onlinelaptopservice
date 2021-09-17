@@ -1,0 +1,102 @@
+/*For phone*/
+
+
+/*Apple section*/
+
+$padding-th-for-laptops: 0px;
+$table-font-color:rgb(140, 111, 111);
+.sec-for-dell {
+    .h-primary {
+        padding: 80px;
+    }
+    .container-for-dell {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px 20px;
+        grid-row-gap: 50px;
+        grid-column-gap: 20px;
+        .box {
+            border: 2px solid gray;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .pic {
+                width: 300px;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+            table {
+                th .speci {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 14px;
+                    color: rgb(69, 116, 143);
+                    font-size: 0px;
+                }
+                tr {
+                    th {
+                        padding: $padding-th-for-laptops;
+                        color: $table-font-color;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    td {
+                        color: $table-font-color;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Apple section*/
+
+@media screen and (max-width:700px) {
+    .sec-for-dell {
+        position: relative;
+        width: 100%;
+        .h-primary {
+            font-size: 23px;
+            text-align: center;
+        }
+        .container-for-dell {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .box {
+                width: 100%;
+                .pic {
+                    width: 150px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                table {
+                    th {
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                    tr {
+                        th {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        td {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

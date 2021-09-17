@@ -1,0 +1,38 @@
+/*Clients Section*/
+
+.sec-for-clients {
+    margin-bottom: 200px;
+    .h-primary {
+        margin-bottom: 40px;
+    }
+    .container-for-clients {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .box {
+            width: 150px;
+        }
+    }
+}
+
+
+/*for phone*/
+
+@media screen and (max-width:700px) {
+    .sec-for-clients {
+        padding: 100px 0px;
+        margin-bottom: 0px;
+        .h-primary {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+        .container-for-clients {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .box {
+                width: 60px;
+            }
+        }
+    }
+}

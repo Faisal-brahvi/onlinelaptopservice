@@ -1,0 +1,51 @@
+/*Clients Section*/
+.sec-for-clients {
+  margin-bottom: 200px;
+}
+
+.sec-for-clients .h-primary {
+  margin-bottom: 40px;
+}
+
+.sec-for-clients .container-for-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-for-clients .container-for-clients .box {
+  width: 150px;
+}
+
+/*for phone*/
+@media screen and (max-width: 700px) {
+  .sec-for-clients {
+    padding: 100px 0px;
+    margin-bottom: 0px;
+  }
+  .sec-for-clients .h-primary {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+  .sec-for-clients .container-for-clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec-for-clients .container-for-clients .box {
+    width: 60px;
+  }
+}
+/*# sourceMappingURL=clients.css.map */
